@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "2b8931b0-f0c2-4310-849b-86ba3d2f9498",
+		"name": "Task Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-task-service.herokuapp.com/v1/task",
+					"protocol": "https",
+					"host": [
+						"node-task-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-task-service.herokuapp.com/v1/task/3",
+					"protocol": "https",
+					"host": [
+						"node-task-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"task",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "task",
+							"value": "test from postman 1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "https://node-task-service.herokuapp.com/v1/task",
+					"protocol": "https",
+					"host": [
+						"node-task-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"task\": \"new update test\",\n    \"status\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-task-service.herokuapp.com/v1/task/21",
+					"protocol": "https",
+					"host": [
+						"node-task-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"task",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://node-task-service.herokuapp.com/v1/task/1",
+					"protocol": "https",
+					"host": [
+						"node-task-service",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"v1",
+						"task",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
